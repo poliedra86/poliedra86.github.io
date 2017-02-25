@@ -113,18 +113,38 @@
     background-image: url("image/pattern-grid.png"); /* fallback */
     background-image: url("img/pattern-grid.png"), linear-gradient(to right, #f0a4a5 0%, #dcc742 100%); /* W3C */
     height: 90vh;
-
-  }
-
-  .wrapper {
     padding-top: 50px;
+
 
   }
 
   #secondblock {
-    height:400px;
+  
     background-color: #9fbfbc;
+  
   }
+
+
+  #thirdblock {
+
+    background-color: white;
+    height: 600px;
+
+
+
+
+  }
+
+
+
+
+  .wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+
+
 
   .column {
     width: 85%;
@@ -137,6 +157,8 @@
     position: relative;
 
   }
+
+
 
   h1 {
     font-family: 'colaborate-regular';
@@ -179,12 +201,46 @@
   ul.lista-1 li {
     font-family: Georgia, Serif;
     font-size: 1.8em;
+    line-height: 2em;
+
 
 
   }
 
+h3 {
+
+  font-family: 'colaborate-light';
+  color:#7d7d7d;
+  font-size: 2.5em;
+  text-align: center;
+
+}
+
+.block{
+
+padding-top: 50px;
+text-align: center;
 
 
+}
+
+h4 {
+
+  font-family: 'Georgia, Serif';
+  font-size: 2em;
+  color: #707070;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+}
+
+p.attributes {
+  font-family: 'colaborate-regular';
+  font-size: 1.7em;
+  color: #9fbfbc;
+
+
+}
 
 
 
