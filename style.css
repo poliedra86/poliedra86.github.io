@@ -177,7 +177,7 @@
     bottom: 20px;
     left:50%;
     margin-left: -15px;
-
+    cursor: pointer;
   }
 
   h2 {
