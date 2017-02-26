@@ -238,8 +238,61 @@ p.attributes {
 }
 
 
+#fourthblock {
+
+background-color: #f0866c;
+
+}
+
+#fourthblock p {
+
+font-family: Georgia, Serif;
+font-size: 3.5em;
+line-height: 1.5em;
+padding: 0 0.7em 1em 0.7em;
+color: white;
 
 
+}
+
+
+#fifthblock {
+
+background-color: #dcc842;
+padding-top: 0;
+
+
+}
+
+.image-wrapper {
+
+  width: 100%;
+  margin-bottom: 50px;
+
+
+}
+
+.image-wrapper img {
+  width: 100%;
+}
+
+#fifthblock li {
+
+  font-family: 'colaborate-thin';
+  font-size: 3.5em;
+  line-height: 1.5em;
+  list-style: disc;
+  list-style-position: inside;
+
+
+}
+
+#fifthblock ul {
+
+padding-top: 25px;
+
+
+}
 
 
 
