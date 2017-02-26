@@ -128,10 +128,6 @@
   #thirdblock {
 
     background-color: white;
-    height: 600px;
-
-
-
 
   }
 
@@ -218,9 +214,8 @@ h3 {
 
 .block{
 
-padding-top: 50px;
+padding: 25px 0;
 text-align: center;
-
 
 }
 
@@ -241,6 +236,38 @@ p.attributes {
 
 
 }
+
+
+
+
+
+
+
+/* Desktop & Tablet */
+
+@media only screen 
+  and (min-width: 768px) { 
+
+.block-container {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+   }
 
 
 
