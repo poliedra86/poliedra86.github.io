@@ -124,7 +124,7 @@
 
   }
 
- 
+
 
 
   #thirdblock {
@@ -271,12 +271,12 @@
 
     width: 100%;
     margin-bottom: 50px;
-    height: 30vh;
+    height: 35vh;
     overflow: hidden;
     background-repeat: no-repeat;
 
     background-size: cover;
-    
+    transition: background-position-y .5s;
 
   }
 
@@ -301,16 +301,12 @@
   }
 
   #fifthblock .image-wrapper {
-  background-image: url(img/what-i-love.jpg);
-  
-
+    background-image: url(img/what-i-love.jpg);
   }
 
 
-#sixthblock .image-wrapper {
-  background-image: url(img/typewriter.jpg);
-  
-
+  #sixthblock .image-wrapper {
+    background-image: url(img/typewriter.jpg);
   }
 
 
@@ -318,9 +314,6 @@
 
     background-color:#d8bea8;
     padding-top: 0;
-
-
-
   }
 
 
@@ -396,22 +389,22 @@
 
     h1 {
 
-    margin-top: 20vh;
+      margin-top: 20vh;
 
 
     }
 
-.column--reduced  {
-    max-width:35vw;  
+    .column--reduced  {
+      max-width:35vw;  
 
     }
 
 
-#sixthblock .image-wrapper {
-  background-position-y: -155px;
-  
+    #sixthblock .image-wrapper {
+      background-position-y: -155px;
 
-  }
+
+    }
 
 
 
