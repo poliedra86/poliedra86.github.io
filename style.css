@@ -163,7 +163,7 @@
   h1 {
     font-family: 'colaborate-regular';
     font-size: 6rem;
-    margin: 9vh 0 5vh 0;
+    margin: 25% 0 10% 0;
   }
 
   .titoletto {
@@ -398,9 +398,24 @@
   
 
 
-
   }
 
+
+
+@media only screen 
+  and (orientation: landscape) {
+
+    
+  h1 {
+    font-family: 'colaborate-regular';
+    font-size: 4rem;
+    margin: 5% 0 2% 0;
+  }
+
+
+
+
+  }
 
 
 
