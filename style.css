@@ -406,13 +406,18 @@
   and (max-width: 750px )
   and (orientation: landscape) {
 
- #firstblock {
-  padding-top: 5%;
+ #logo {
+  display: none;
  }
+
+#arrow {
+
+  bottom: 80px;
+}
     
   h1 {
     font-size: 4rem;
-    margin: 5% 0 2% 0;
+    margin: 10% 0 2% 0;
   }
 
 
