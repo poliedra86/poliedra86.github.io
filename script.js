@@ -29,3 +29,40 @@
 })();
 
 
+
+(function() {
+
+	var container = document.getElementById('cookie');
+	var button = document.getElementById('cookie-button');
+	var body = document.querySelector('body')
+	var accepted = localStorage.getItem('cookie-accepted') === 'true';
+
+
+	if (!accepted) {
+		container.classList.remove('hidden');
+	}
+
+	function hide() {
+		container.classList.add('hidden');
+		sessionStorage.setItem('cookie-accepted', 'true')
+	}
+
+
+	button.addEventListener('click', function() {
+		hide();
+	})
+
+
+	body.onscroll = function() {
+	    hide();
+	};
+
+
+})();
+
+
+
+
+
+
+

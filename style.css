@@ -109,6 +109,11 @@
   }
 
 
+
+  .hidden {
+    display: none;
+  }
+
   #firstblock {
     background: #f0a4a5;
     background-image: url("image/pattern-grid.png"); /* fallback */
@@ -394,6 +399,35 @@
 
 
     }
+
+
+
+    .cookie-banner {
+
+      position: fixed;
+      font-family: 'colaborate-light';
+      font-size: 1.5em;
+      text-align: center;
+      padding: 1em;
+      width: 100%;
+      background-color: #ffffff;
+      bottom: 0;
+      color: black;
+
+
+    }
+
+
+    .cookie-banner  button {
+
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-family: 'colaborate-regular';
+      text-decoration: underline;
+      font-size: 0.9em;
+    }
+
 
 
 
