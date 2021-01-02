@@ -1,505 +1,469 @@
-/* Reset
-   http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-   */
 
-   html, body, div, span, applet, object, iframe,
-   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-   a, abbr, acronym, address, big, cite, code,
-   del, dfn, em, img, ins, kbd, q, s, samp,
-   small, strike, strong, sub, sup, tt, var,
-   b, u, i, center,
-   dl, dt, dd, ol, ul, li,
-   fieldset, form, label, legend,
-   table, caption, tbody, tfoot, thead, tr, th, td,
-   article, aside, canvas, details, embed, 
-   figure, figcaption, footer, header, hgroup, 
-   menu, nav, output, ruby, section, summary,
-   time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    text-decoration:none;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration:none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 10px;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'colaborate-bold';
+  src: url('font/ColabBol-webfont.woff') format('woff'),
+  url('font/ColabBol-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+@font-face {
+  font-family: 'colaborate-light';
+  src: url('font/ColabLig-webfont.woff') format('woff'),
+  url('font/ColabLig-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'colaborate-medium';
+  src: url('font/ColabMed-webfont.woff') format('woff'),
+  url('font/ColabMed-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'colaborate-regular';
+  src: url('font/ColabReg-webfont.woff') format('woff'),
+  url('font/ColabReg-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'colaborate-thin';
+  src: url('font/ColabThi-webfont.woff') format('woff'),
+  url('font/ColabThi-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+#firstblock {
+  background: #f0a4a5;
+  background-image: url("image/pattern-grid.png"); /* fallback */
+  background-image: url("img/pattern-grid.png"), linear-gradient(to right, #f0a4a5 0%, #dcc742 100%); /* W3C */
+  height: 90vh;
+  padding-top: 50px;
+}
+
+#secondblock {
+
+  background-color: #9fbfbc;
+
+}
+
+
+
+
+#thirdblock {
+
+  background-color: white;
+
+}
+
+
+
+
+.wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+
+
+.column {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 900px;
+
+}
+
+#inner-1 {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#inner-1 header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+h1 {
+  font-family: 'colaborate-regular';
+  font-size: 6rem;
+  margin: 0 0 35px 0;
+}
+
+.titoletto {
+  font-family: 'colaborate-light';
+  font-size: 3.5rem;
+}
+
+#arrow {
+  margin: 20px auto 20px auto;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: 'colaborate-medium';
+  font-size: 4em;
+  border-bottom: 0.2em solid white;
+
+
+}
+
+ul.lista-1 {
+  list-style-image: url('img/freccia-bullet.svg');
+  list-style-position: inside;
+  margin-top: 40px;
+
+
+
+}
+
+ul.lista-1 li {
+  font-family: Georgia, Serif;
+  font-size: 1.8em;
+  line-height: 2em;
+
+
+
+}
+
+h3 {
+
+  font-family: 'colaborate-light';
+  color:#7d7d7d;
+  font-size: 2.5em;
+  text-align: center;
+
+}
+
+.block{
+
+  padding: 25px 0;
+  text-align: center;
+
+}
+
+h4 {
+
+  font-family: 'Georgia, Serif';
+  font-size: 2em;
+  color: #707070;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+}
+
+p.attributes {
+  font-family: 'colaborate-regular';
+  font-size: 1.7em;
+  color: #9fbfbc;
+
+
+}
+
+
+#fourthblock {
+
+  background-color: #f0866c;
+
+}
+
+#fourthblock p {
+
+  font-family: Georgia, Serif;
+  font-size: 3.5em;
+  line-height: 1.5em;
+  padding: 0 0.7em 1em 0;
+  color: white;
+
+
+}
+
+
+#fifthblock {
+
+  background-color: #dcc842;
+  padding-top: 0;
+
+
+}
+
+.image-wrapper {
+
+  width: 100%;
+  margin-bottom: 50px;
+  height: 35vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  transition: background-position-y .5s;
+
+}
+
+
+
+#fifthblock .image-wrapper {
+  background-image: url(img/what-i-love.jpg);
+}
+
+
+#sixthblock .image-wrapper {
+  background-image: url(img/typewriter.jpg);
+
+
+}
+
+
+#sixthblock {
+
+  background-color:#d8bea8;
+  padding-top: 0;
+}
+
+
+
+.button-enhanced {
+  display: block;
+  padding: 1em 0;
+  text-align: center;
+  border: 1px solid white;
+  font-family: 'colaborate-regular';
+  font-size: 2.3em;
+  color: white;
+  margin: 1.5em 0;
+  text-decoration: none;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button-enhanced:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0,0,0,0.1);
+  transition: height .3s;
+  z-index: -2;
+} 
+
+.button-enhanced:hover:after {
+  height: 100%;
+}
+
+
+
+
+.button-lin {
+
+  background-color: #9fbfbc;
+
+}
+
+
+
+
+
+
+.button-cv {
+
+  background-color: #dcc842;
+
+}
+
+
+
+.button-pin {
+
+  background-color: #b63935;
+
+}
+
+
+
+
+footer {
+
+  margin-top: 100px;
+  font-family: 'colaborate-light';
+  color: white;
+  font-size: 1.6em;
+
+
+
+}
+
+
+
+.cookie-banner {
+
+  position: fixed;
+  font-family: 'colaborate-light';
+  font-size: 1.5em;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  background-color: #ffffff;
+  bottom: 0;
+  color: black;
+
+
+}
+
+
+.cookie-banner  button {
+
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'colaborate-regular';
+  text-decoration: underline;
+  font-size: 0.9em;
+}
+
+
+
+
+/* Desktop & Tablet */
+
+@media only screen 
+and (min-width: 768px) { 
+
+  .block-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure, 
-  footer, header, hgroup, menu, nav, section {
-    display: block;
-  }
-  body {
-    line-height: 1;
-  }
-  ol, ul {
-    list-style: none;
-  }
-  blockquote, q {
-    quotes: none;
-  }
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-    content: '';
-    content: none;
-  }
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
 
-  html {
-    font-size: 10px;
-    color: white;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  /* Fonts */
-
-  @font-face {
-    font-family: 'colaborate-bold';
-    src: url('font/ColabBol-webfont.woff') format('woff'),
-    url('font/ColabBol-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-  }
-
-
-
-  @font-face {
-    font-family: 'colaborate-light';
-    src: url('font/ColabLig-webfont.woff') format('woff'),
-    url('font/ColabLig-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-  }
-
-  @font-face {
-    font-family: 'colaborate-medium';
-    src: url('font/ColabMed-webfont.woff') format('woff'),
-    url('font/ColabMed-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-  }
-
-
-  @font-face {
-    font-family: 'colaborate-regular';
-    src: url('font/ColabReg-webfont.woff') format('woff'),
-    url('font/ColabReg-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-  }
-
-  @font-face {
-    font-family: 'colaborate-thin';
-    src: url('font/ColabThi-webfont.woff') format('woff'),
-    url('font/ColabThi-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-  }
-
-
-
-  .hidden {
-    display: none;
-  }
 
   #firstblock {
-    background: #f0a4a5;
-    background-image: url("image/pattern-grid.png"); /* fallback */
-    background-image: url("img/pattern-grid.png"), linear-gradient(to right, #f0a4a5 0%, #dcc742 100%); /* W3C */
-    height: 90vh;
-    padding-top: 50px;
-
-
-  }
-
-  #secondblock {
-
-    background-color: #9fbfbc;
-
-  }
-
-
-
-
-  #thirdblock {
-
-    background-color: white;
-
-  }
-
-
-
-
-  .wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-  }
-
-
-
-  .column {
-    width: 85%;
-    margin: 0 auto;
-    max-width: 900px;
-
-  }
-
-  #inner-1 {
-    height: 100%;
-    position: relative;
-
-  }
-
-
-
-  h1 {
-    font-family: 'colaborate-regular';
-    font-size: 6rem;
-    margin: 60px 0 50px 0;
-  }
-
-  .titoletto {
-    font-family: 'colaborate-light';
-    font-size: 3.5rem;
-
-
-  }
-
-  #arrow {
-    position: absolute;
-    bottom: 20px;
-    left:50%;
-    margin-left: -15px;
-    cursor: pointer;
-  }
-
-  h2 {
-    font-family: 'colaborate-medium';
-    font-size: 4em;
-    border-bottom: 0.2em solid white;
-
-
-  }
-
-  ul.lista-1 {
-    list-style-image: url('img/freccia-bullet.svg');
-    list-style-position: inside;
-    margin-top: 40px;
-
-
-
-  }
-
-  ul.lista-1 li {
-    font-family: Georgia, Serif;
-    font-size: 1.8em;
-    line-height: 2em;
-
-
-
-  }
-
-  h3 {
-
-    font-family: 'colaborate-light';
-    color:#7d7d7d;
-    font-size: 2.5em;
     text-align: center;
-
   }
 
-  .block{
-
-    padding: 25px 0;
-    text-align: center;
-
+  .column--reduced  {
+    max-width:35vw;  
   }
-
-  h4 {
-
-    font-family: 'Georgia, Serif';
-    font-size: 2em;
-    color: #707070;
-    padding-top: 20px;
-    padding-bottom: 15px;
-
-  }
-
-  p.attributes {
-    font-family: 'colaborate-regular';
-    font-size: 1.7em;
-    color: #9fbfbc;
-
-
-  }
-
-
-  #fourthblock {
-
-    background-color: #f0866c;
-
-  }
-
-  #fourthblock p {
-
-    font-family: Georgia, Serif;
-    font-size: 3.5em;
-    line-height: 1.5em;
-    padding: 0 0.7em 1em 0;
-    color: white;
-
-
-  }
-
-
-  #fifthblock {
-
-    background-color: #dcc842;
-    padding-top: 0;
-
-
-  }
-
-  .image-wrapper {
-
-    width: 100%;
-    margin-bottom: 50px;
-    height: 35vh;
-    overflow: hidden;
-    background-repeat: no-repeat;
-
-    background-size: cover;
-    transition: background-position-y .5s;
-
-  }
-
-
 
   #fifthblock .image-wrapper {
-    background-image: url(img/what-i-love.jpg);
+    background-position-y: -180px;
   }
 
 
   #sixthblock .image-wrapper {
-    background-image: url(img/typewriter.jpg);
+    background-position-y: -350px;
+  }
+
+  #logo {
+    margin: 0 auto;
+  }
+}
 
 
+
+@media only screen 
+and (max-width: 750px )
+and (orientation: landscape) {
+
+  #logo {
+    display: none;
+  }
+
+  #arrow {
+    bottom: 80px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 2%;
   }
 
 
-  #sixthblock {
-
-    background-color:#d8bea8;
-    padding-top: 0;
-  }
-
-
-
- /* .button {
-
-    display: block;
-    width: 100%;
-    padding: 1em 0;
-    text-align: center;
-    border: 1px solid white;
-    font-family: 'colaborate-regular';
-    font-size: 2.3em;
-    color: white;
-    margin: 1.5em 0;
-    text-decoration: none;
-
-
-    } */
-
-
-    .button-enhanced {
-      display: block;
-      padding: 1em 0;
-      text-align: center;
-      border: 1px solid white;
-      font-family: 'colaborate-regular';
-      font-size: 2.3em;
-      color: white;
-      margin: 1.5em 0;
-      text-decoration: none;
-      transition: all .3s;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-    }
-
-    .button-enhanced:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 0%;
-      background-color: rgba(0,0,0,0.1);
-      transition: height .3s;
-      z-index: -2;
-    } 
-
-    .button-enhanced:hover:after {
-      height: 100%;
-    }
-
-
-
-
-    .button-lin {
-
-      background-color: #9fbfbc;
-
-    }
-
-
-
-
-
-
-    .button-cv {
-
-      background-color: #dcc842;
-
-    }
-
-
-
-    .button-pin {
-
-      background-color: #b63935;
-
-    }
-
-
-
-
-    footer {
-
-      margin-top: 100px;
-      font-family: 'colaborate-light';
-      color: white;
-      font-size: 1.6em;
-
-
-
-    }
-
-
-
-    .cookie-banner {
-
-      position: fixed;
-      font-family: 'colaborate-light';
-      font-size: 1.5em;
-      text-align: center;
-      padding: 1em;
-      width: 100%;
-      background-color: #ffffff;
-      bottom: 0;
-      color: black;
-
-
-    }
-
-
-    .cookie-banner  button {
-
-      border: none;
-      background: none;
-      cursor: pointer;
-      font-family: 'colaborate-regular';
-      text-decoration: underline;
-      font-size: 0.9em;
-    }
-
-
-
-
-    /* Desktop & Tablet */
-
-    @media only screen 
-    and (min-width: 768px) { 
-
-      .block-container {
-
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-
-      }
-
-
-      #firstblock {
-        text-align: center;
-
-
-
-      }
-
-      h1 {
-
-        margin-top: 20vh;
-
-
-      }
-
-      .column--reduced  {
-        max-width:35vw;  
-
-      }
-
-
-      #fifthblock .image-wrapper {
-        background-position-y: -180px;
-      }
-
-
-      #sixthblock .image-wrapper {
-        background-position-y: -350px;
-
-      }
-
-
-
-    }
-
-
-
-    @media only screen 
-    and (max-width: 750px )
-    and (orientation: landscape) {
-
-     #logo {
-      display: none;
-    }
-
-    #arrow {
-
-      bottom: 80px;
-    }
-
-    h1 {
-      font-size: 4rem;
-      margin: 10% 0 2% 0;
-    }
-
-
-
+}
 
 
 
