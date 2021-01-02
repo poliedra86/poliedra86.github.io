@@ -295,7 +295,6 @@
 
   #sixthblock .image-wrapper {
     background-image: url(img/typewriter.jpg);
-    background-position-y: -30px;
 
 
   }
@@ -471,7 +470,7 @@
 
 
       #sixthblock .image-wrapper {
-        background-position-y: -155px;
+        background-position-y: -350px;
 
       }
 

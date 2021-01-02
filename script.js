@@ -35,7 +35,7 @@
 	var container = document.getElementById('cookie');
 	var button = document.getElementById('cookie-button');
 	var body = document.querySelector('body')
-	var accepted = localStorage.getItem('cookie-accepted') === 'true';
+	var accepted = sessionStorage.getItem('cookie-accepted') === 'true';
 
 
 	if (!accepted) {
