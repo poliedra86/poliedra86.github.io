@@ -1,0 +1,14 @@
+{
+  "name": "poliedra86.github.io",
+  "version": "1.0.0",
+  "description": "il sito è visibile a [questo link](https://poliedra86.github.io/)",
+  "main": "script.js",
+  "scripts": {
+    "start": "kservez -p=7777 ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "kservez": "^1.2.2"
+  }
+}
