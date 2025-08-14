@@ -37,45 +37,34 @@ html {
   box-sizing: border-box;
 }
 
-/* Fonts */
-@font-face {
-  font-family: "colaborate-bold";
-  src: url("font/ColabBol-webfont.woff") format("woff"),
-    url("font/ColabBol-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+@layer utilities {
+  .noto-sans-500 {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    @apply font-medium font-noto-sans;
+  }
 }
 
-@font-face {
-  font-family: "colaborate-light";
-  src: url("font/ColabLig-webfont.woff") format("woff"),
-    url("font/ColabLig-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+h1 {
+  margin: 0 0 35px 0;
+  @apply font-medium font-noto-sans;
+}
+h2 {
+  border-bottom: 0.2em solid white;
+  @apply font-medium font-noto-sans;
 }
 
-@font-face {
-  font-family: "colaborate-medium";
-  src: url("font/ColabMed-webfont.woff") format("woff"),
-    url("font/ColabMed-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+h2.dark {
+  @apply text-brand-bordeaux border-brand-bordeaux;
 }
 
-@font-face {
-  font-family: "colaborate-regular";
-  src: url("font/ColabReg-webfont.woff") format("woff"),
-    url("font/ColabReg-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "colaborate-thin";
-  src: url("/font/ColabThi-webfont.woff") format("woff"),
-    url("/font/ColabThi-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+h3 {
+  color: #7d7d7d;
+  text-align: center;
+  @apply font-medium font-noto-sans;
 }
 
 section {
@@ -134,27 +123,9 @@ section {
   justify-content: center;
 }
 
-h1 {
-  font-family: "colaborate-regular";
-  margin: 0 0 35px 0;
-}
-
-.titoletto {
-  font-family: "colaborate-light";
-}
-
 #arrow {
   margin: 20px auto 20px auto;
   cursor: pointer;
-}
-
-h2 {
-  font-family: "colaborate-medium";
-  border-bottom: 0.2em solid white;
-}
-
-h2.dark {
-  @apply text-brand-bordeaux border-brand-bordeaux;
 }
 
 ul.lista-1 {
@@ -167,25 +138,18 @@ ul.lista-1 li {
   line-height: 2em;
 }
 
-h3 {
-  font-family: "colaborate-light";
-  color: #7d7d7d;
-  text-align: center;
-}
-
 .block img {
   @apply mb-4;
 }
 
 .portfolio-descr-text {
-  font-family: "Georgia, Serif";
   display: block;
-  @apply text-xl cursor-pointer text-brand-grey hover:underline;
+
+  @apply text-xl cursor-pointer text-brand-grey hover:underline font-noto-sans;
 }
 
 .portfolio-descr-skills {
-  font-family: "colaborate-regular";
-  @apply text-lg text-brand-teal;
+  @apply text-lg font-light text-brand-teal font-noto-sans;
 }
 
 #fourthblock {
@@ -222,11 +186,10 @@ h3 {
   padding: 1em 0;
   text-align: center;
   border: 1px solid white;
-  font-family: "colaborate-regular";
   color: white;
   margin: 1.5em 0;
   text-decoration: none;
-  @apply text-2xl;
+  @apply text-2xl font-medium font-noto-sans;
 }
 
 .with-hover-effect {
@@ -261,9 +224,6 @@ h3 {
 
 footer {
   margin-top: 100px;
-  font-family: "colaborate-light";
-  color: white;
-  font-size: 1.6em;
 }
 
 /* Desktop & Tablet */

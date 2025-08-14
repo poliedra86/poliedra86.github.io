@@ -15,11 +15,7 @@ module.exports = {
         "brand-bordeaux": "#5c0220",
       },
       fontFamily: {
-        "colaborate-bold": ["colaborate-bold", "sans-serif"],
-        "colaborate-light": ["colaborate-light", "sans-serif"],
-        "colaborate-medium": ["colaborate-medium", "sans-serif"],
-        "colaborate-regular": ["colaborate-regular", "sans-serif"],
-        "colaborate-thin": ["colaborate-thin", "sans-serif"],
+        "noto-sans": ["Noto Sans", "sans-serif"],
       },
       fontSize: {
         10: "10rem",
