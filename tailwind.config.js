@@ -6,13 +6,13 @@ module.exports = {
       colors: {
         // Custom colors matching your existing palette
         "brand-pink": "#f0a4a5",
+        "brand-lightpink": "#F5E3E5",
         "brand-yellow": "#dcc742",
         "brand-teal": "#9fbfbc",
         "brand-coral": "#f0866c",
         "brand-beige": "#d8bea8",
-        "artemest-bg": "#b8a39d",
-        "artemest-red": "#b63935",
         "brand-grey": "#707070",
+        "brand-bordeaux": "#5c0220",
       },
       fontFamily: {
         "colaborate-bold": ["colaborate-bold", "sans-serif"],

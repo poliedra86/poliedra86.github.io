@@ -78,6 +78,10 @@ html {
   font-style: normal;
 }
 
+section {
+  @apply py-12;
+}
+
 .hidden {
   display: none;
 }
@@ -149,6 +153,10 @@ h2 {
   border-bottom: 0.2em solid white;
 }
 
+h2.dark {
+  @apply text-brand-bordeaux border-brand-bordeaux;
+}
+
 ul.lista-1 {
   list-style-image: url("img/freccia-bullet.svg");
   @apply text-lg list-inside;
@@ -172,7 +180,7 @@ h3 {
 .portfolio-descr-text {
   font-family: "Georgia, Serif";
   display: block;
-  @apply text-xl text-brand-grey;
+  @apply text-xl cursor-pointer text-brand-grey hover:underline;
 }
 
 .portfolio-descr-skills {
@@ -207,15 +215,6 @@ h3 {
 
 #fifthblock .image-wrapper {
   background-image: url(img/what-i-love.jpg);
-}
-
-#sixthblock .image-wrapper {
-  background-image: url(img/typewriter.jpg);
-}
-
-#sixthblock {
-  background-color: #d8bea8;
-  padding-top: 0;
 }
 
 .button-enhanced {
@@ -258,10 +257,6 @@ h3 {
 
 .button-cv {
   background-color: #dcc842;
-}
-
-.button-pin {
-  background-color: #b63935;
 }
 
 footer {
