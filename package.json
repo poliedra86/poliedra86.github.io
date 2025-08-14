@@ -4,10 +4,9 @@
   "description": "il sito è visibile a [questo link](https://poliedra86.github.io/)",
   "main": "script.js",
   "scripts": {
-    "start": "kservez -p=7777 .",
-    "watch": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/style.css --minify",
-    "dev": "npm run build-css"
+    "start": "kservez -p=7777 public",
+    "watch": "tailwindcss -i ./src/input.css -o ./public/style.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./public/style.css --minify"
   },
   "author": "",
   "license": "ISC",
