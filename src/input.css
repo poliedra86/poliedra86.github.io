@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  line-height: 1;
-}
-
 ol,
 ul {
   list-style: none;
@@ -29,14 +25,6 @@ table {
   border-spacing: 0;
 }
 
-html {
-  color: white;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 @layer utilities {
   .noto-sans-500 {
     font-family: "Noto Sans", sans-serif;
@@ -46,6 +34,11 @@ html {
     font-variation-settings: "wdth" 100;
     @apply font-medium font-noto-sans;
   }
+}
+
+body {
+  line-height: 1;
+  @apply text-white;
 }
 
 h1 {
@@ -134,7 +127,7 @@ ul.lista-1 {
 }
 
 ul.lista-1 li {
-  font-family: Georgia, Serif;
+  @apply font-normal font-source-serif;
   line-height: 2em;
 }
 
@@ -157,7 +150,7 @@ ul.lista-1 li {
 }
 
 #fourthblock p {
-  font-family: Georgia, Serif;
+  @apply font-normal font-source-serif;
   padding: 0 0.7em 1em 0;
   color: white;
 }

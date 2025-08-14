@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         "noto-sans": ["Noto Sans", "sans-serif"],
+        "source-serif": ['"Source Serif 4"', "serif"],
       },
       fontSize: {
         10: "10rem",
