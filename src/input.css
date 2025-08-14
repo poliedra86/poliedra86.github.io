@@ -30,7 +30,6 @@ table {
 }
 
 html {
-  font-size: 10px;
   color: white;
 }
 
@@ -107,7 +106,14 @@ html {
 
 .column {
   margin: 0 auto;
-  @apply w-5/6 max-w-4xl;
+  max-width: 900px;
+  @apply w-5/6;
+}
+
+.column-wide {
+  margin: 0 auto;
+  max-width: 1200px;
+  @apply w-11/12;
 }
 
 #inner-1 {
@@ -126,13 +132,11 @@ html {
 
 h1 {
   font-family: "colaborate-regular";
-  font-size: 6rem;
   margin: 0 0 35px 0;
 }
 
 .titoletto {
   font-family: "colaborate-light";
-  font-size: 3.5rem;
 }
 
 #arrow {
@@ -142,46 +146,38 @@ h1 {
 
 h2 {
   font-family: "colaborate-medium";
-  font-size: 4em;
   border-bottom: 0.2em solid white;
 }
 
 ul.lista-1 {
   list-style-image: url("img/freccia-bullet.svg");
-  list-style-position: inside;
-  margin-top: 40px;
+  @apply text-lg list-inside;
 }
 
 ul.lista-1 li {
   font-family: Georgia, Serif;
-  font-size: 1.8em;
   line-height: 2em;
 }
 
 h3 {
   font-family: "colaborate-light";
   color: #7d7d7d;
-  font-size: 2.5em;
   text-align: center;
 }
 
-.block {
-  padding: 25px 0;
-  text-align: center;
+.block img {
+  @apply mb-4;
 }
 
-h4 {
+.portfolio-descr-text {
   font-family: "Georgia, Serif";
-  font-size: 2em;
-  color: #707070;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  display: block;
+  @apply text-xl text-brand-grey;
 }
 
-p.attributes {
+.portfolio-descr-skills {
   font-family: "colaborate-regular";
-  font-size: 1.7em;
-  color: #9fbfbc;
+  @apply text-lg text-brand-teal;
 }
 
 #fourthblock {
@@ -190,8 +186,6 @@ p.attributes {
 
 #fourthblock p {
   font-family: Georgia, Serif;
-  font-size: 3.5em;
-  line-height: 1.5em;
   padding: 0 0.7em 1em 0;
   color: white;
 }
@@ -230,29 +224,31 @@ p.attributes {
   text-align: center;
   border: 1px solid white;
   font-family: "colaborate-regular";
-  font-size: 2.3em;
   color: white;
   margin: 1.5em 0;
   text-decoration: none;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
+  @apply text-2xl;
 }
 
-.button-enhanced:after {
+.with-hover-effect {
+  display: block;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.with-hover-effect:after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 0%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   transition: height 0.3s;
-  z-index: -2;
 }
 
-.button-enhanced:hover:after {
+.with-hover-effect:hover:after {
   height: 100%;
 }
 

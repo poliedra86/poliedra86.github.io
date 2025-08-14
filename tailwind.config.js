@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./script.js", "./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "./public/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -12,6 +12,7 @@ module.exports = {
         "brand-beige": "#d8bea8",
         "artemest-bg": "#b8a39d",
         "artemest-red": "#b63935",
+        "brand-grey": "#707070",
       },
       fontFamily: {
         "colaborate-bold": ["colaborate-bold", "sans-serif"],
