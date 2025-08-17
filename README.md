@@ -10,7 +10,7 @@ This project uses Tailwind CSS for styling alongside custom CSS.
 
 ### Prerequisites
 
-- Node.js (v18 or higher)
+- Node.js (v22 or higher)
 - npm
 
 ### Getting Started
@@ -24,7 +24,7 @@ npm install
 2. Start development server with CSS watching:
 
 ```bash
-npm run build-css
+npm run watch
 ```
 
 3. In another terminal, start the local server:
@@ -32,12 +32,6 @@ npm run build-css
 ```bash
 npm start
 ```
-
-### Scripts
-
-- `npm run build-css` - Watch for changes and build CSS (development)
-- `npm run build-css-prod` - Build minified CSS for production
-- `npm start` - Start local development server
 
 ### Deployment
 

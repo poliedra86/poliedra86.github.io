@@ -46,8 +46,7 @@ h1 {
   @apply font-medium font-noto-sans;
 }
 h2 {
-  border-bottom: 0.2em solid white;
-  @apply font-medium font-noto-sans;
+  @apply mb-4 text-4xl font-medium font-noto-sans;
 }
 
 h2.dark {
@@ -92,7 +91,7 @@ section {
 
 .column {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 750px;
   @apply w-5/6;
 }
 
@@ -121,14 +120,16 @@ section {
   cursor: pointer;
 }
 
-ul.lista-1 {
+ul {
   list-style-image: url("img/freccia-bullet.svg");
-  @apply text-lg list-inside;
+  margin-left: 1.1rem;
+  @apply text-lg list-outside;
 }
 
-ul.lista-1 li {
+li {
   @apply font-normal font-source-serif;
-  line-height: 2em;
+  padding-left: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .block img {

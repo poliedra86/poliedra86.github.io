@@ -12,6 +12,7 @@ module.exports = {
         "brand-coral": "#f0866c",
         "brand-beige": "#d8bea8",
         "brand-grey": "#707070",
+        "brand-grey-2": "#7d7d7d",
         "brand-bordeaux": "#5c0220",
       },
       fontFamily: {
