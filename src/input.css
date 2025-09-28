@@ -76,7 +76,8 @@ section {
   padding-top: 50px;
 }
 
-#secondblock {
+#secondblock,
+#fifthblock {
   background-color: #304458;
 }
 
@@ -113,11 +114,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#arrow {
-  margin: 20px auto 20px auto;
-  cursor: pointer;
 }
 
 ul {
@@ -157,7 +153,6 @@ li {
 }
 
 #fifthblock {
-  background-color: #dcc842;
   padding-top: 0;
 }
 
@@ -209,11 +204,11 @@ li {
 }
 
 .button-lin {
-  background-color: #9fbfbc;
+  background-color: #304458;
 }
 
 .button-cv {
-  background-color: #dcc842;
+  background-color: #00b2a8;
 }
 
 footer {
@@ -252,10 +247,6 @@ footer {
 @media only screen and (max-width: 750px) and (orientation: landscape) {
   #logo {
     display: none;
-  }
-
-  #arrow {
-    bottom: 80px;
   }
 
   h1 {
